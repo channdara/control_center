@@ -6,8 +6,8 @@ import '../../../model/small_width_type.dart';
 import '../../bloc/small_width/small_width_bloc.dart';
 import '../elevated_button_widget.dart';
 
-class SmallWidthWidget extends StatelessWidget {
-  const SmallWidthWidget({super.key, required this.bloc});
+class SmallWidthFormWidget extends StatelessWidget {
+  const SmallWidthFormWidget({super.key, required this.bloc});
 
   final SmallWidthBloc bloc;
 

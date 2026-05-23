@@ -10,7 +10,7 @@ import '../widget/small_width/small_width_current_value_widget.dart';
 import '../widget/small_width/small_width_force_even_widget.dart';
 import '../widget/small_width/small_width_info_widget.dart';
 import '../widget/small_width/small_width_step_widget.dart';
-import '../widget/small_width/small_width_widget.dart';
+import '../widget/small_width/small_width_form_widget.dart';
 
 class SmallWidthScreen extends StatefulWidget {
   const SmallWidthScreen({super.key});
@@ -71,7 +71,7 @@ class _SmallWidthScreenState
                   const SizedBox(height: 16.0),
                   const SmallWidthInfoWidget(),
                   const SizedBox(height: 16.0),
-                  SmallWidthWidget(bloc: bloc),
+                  SmallWidthFormWidget(bloc: bloc),
                   const SizedBox(height: 8.0),
                   SmallWidthStepWidget(bloc: bloc),
                   const SizedBox(height: 8.0),
