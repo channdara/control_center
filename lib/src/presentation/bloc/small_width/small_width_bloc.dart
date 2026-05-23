@@ -47,9 +47,9 @@ class SmallWidthBloc extends EinBaseBloc {
       final small = preferences.getString(SmallWidthType.small.name);
       final medium = preferences.getString(SmallWidthType.medium.name);
       final large = preferences.getString(SmallWidthType.large.name);
-      smallController.text = small ?? '';
-      mediumController.text = medium ?? '';
-      largeController.text = large ?? '';
+      smallController.text = small ?? '438';
+      mediumController.text = medium ?? '372';
+      largeController.text = large ?? '320';
     });
   }
 

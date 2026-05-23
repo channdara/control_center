@@ -19,9 +19,9 @@ class SpaceIntervalBloc extends EinBaseBloc {
 
   bool convertToInteger = false;
 
-  num get startValue => num.tryParse(startController.text.trim()) ?? 0;
+  num get startValue => num.tryParse(startController.text.trim()) ?? -1;
 
-  num get endValue => num.tryParse(endController.text.trim()) ?? 0;
+  num get endValue => num.tryParse(endController.text.trim()) ?? -1;
 
   int get intervalValue => intervalController.text.trim().toInt;
 
@@ -47,6 +47,8 @@ class SpaceIntervalBloc extends EinBaseBloc {
     intervalTabController = TabController(length: steps.length, vsync: vsync);
     intervalController.text = steps[intervalTabController.index];
     intervalTabController.addListener(intervalChangeListener);
+    startController.text = '0';
+    endController.text = '100';
   }
 
   void intervalChangeListener() {
